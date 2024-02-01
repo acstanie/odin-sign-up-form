@@ -1,6 +1,11 @@
 :root {
     --test-border: 1px solid black;
     --display-flex: flex;
+
+
+    --white-background: white;
+
+    --div-size: 300px;
 }
 
 * {
@@ -15,16 +20,78 @@
     height: 100vh;
 }
 
+/* left side style */
+
 .left-side {
     border: var(--test-border);
-    flex-grow: 1.5;
+    width: 80vw;
+
     background-image: url(images/cole-keister-nfxIvG2B62I-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+/* right side style */
+
 .right-side {
     border: var(--test-border);
-    flex-grow: 2;
+
+    display: var(--display-flex);
+    flex-direction: column;
+}
+
+.right-side:nth-child(2) {
+    display: var(--display-flex);
+    flex-direction: column;
+}
+
+.form > form > div:nth-child(1) {
+    background-color: var(--white-background);
+    border: var(--test-border);
+    display: var(--display-flex);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form > form > div:nth-child(1) > div:nth-child(1) {
+    width: var(--div-size);
+    display: var(--display-flex);
+    border: var(--test-border);
+    flex-direction: column;
+}
+
+.form > form > div:nth-child(1) > div:nth-child(2) {
+    width: var(--div-size);
+    display: var(--display-flex);
+    border: var(--test-border);
+    flex-direction: column;
+}
+
+.form > form > div:nth-child(1) > div:nth-child(3) {
+    width: var(--div-size);
+    display: var(--display-flex);
+    border: var(--test-border);
+    flex-direction: column;
+}
+
+.form > form > div:nth-child(1) > div:nth-child(4) {
+    width: var(--div-size);
+    display: var(--display-flex);
+    border: var(--test-border);
+    flex-direction: column;
+}
+
+.form > form > div:nth-child(1) > div:nth-child(5) {
+    width: var(--div-size);
+    display: var(--display-flex);
+    border: var(--test-border);
+    flex-direction: column;
+}
+
+.form > form > div:nth-child(1) > div:nth-child(6) {
+    width: var(--div-size);
+    display: var(--display-flex);
+    border: var(--test-border);
+    flex-direction: column;
 }
