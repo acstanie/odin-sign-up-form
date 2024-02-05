@@ -26,7 +26,7 @@
 /* left side style */
 
 .left-side {
-    width: 80vw;
+    width: 100vw;
 
     background-image: url(images/cole-keister-nfxIvG2B62I-unsplash.jpg);
     background-repeat: no-repeat;
@@ -76,10 +76,9 @@
 }
 
 .right-side > div:nth-child(1) {
-    border: var(--test-border);
     padding: 50px;
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
 
     font-weight: bold;
 }
@@ -92,18 +91,16 @@
     font-style: italic;
 }
 
+/* Form details */
 
-.right-side:nth-child(2) {
+.right-side > div:nth-child(2) {
+    position: relative;
+    bottom: 50px;
     display: var(--display-flex);
     flex-direction: column;
 }
 
-.form {
-    display: var(--display-flex);
-    gap: 20px;
-}
-
-.form > form > div:nth-child(1) {
+.right-side > div:nth-child(2) > form > div:nth-child(1) {
     background-color: var(--white-background);
     border: var(--test-border);
     display: var(--display-flex);
@@ -111,44 +108,36 @@
     gap: 20px;
 }
 
-.form > form > div:nth-child(1) > div:nth-child(1) {
-    width: var(--div-size);
-    display: var(--display-flex);
+.right-side > div:nth-child(2) > form > div:nth-child(1) > div:nth-child(1) {
     border: var(--test-border);
-    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
 }
 
-.form > form > div:nth-child(1) > div:nth-child(2) {
+
+.right-side > div:nth-child(2) > form > div:nth-child(1) > div {
     width: var(--div-size);
     display: var(--display-flex);
     border: var(--test-border);
     flex-direction: column;
+    padding-left: 50px;
 }
 
-.form > form > div:nth-child(1) > div:nth-child(3) {
-    width: var(--div-size);
-    display: var(--display-flex);
+/* Button */
+
+.right-side > div:nth-child(2) > form > div:last-child {
     border: var(--test-border);
+
+    position: relative;
+    top: 20px;
+    padding-left: 50px;
+
+    display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.form > form > div:nth-child(1) > div:nth-child(4) {
-    width: var(--div-size);
-    display: var(--display-flex);
-    border: var(--test-border);
-    flex-direction: column;
-}
-
-.form > form > div:nth-child(1) > div:nth-child(5) {
-    width: var(--div-size);
-    display: var(--display-flex);
-    border: var(--test-border);
-    flex-direction: column;
-}
-
-.form > form > div:nth-child(1) > div:nth-child(6) {
-    width: var(--div-size);
-    display: var(--display-flex);
-    border: var(--test-border);
-    flex-direction: column;
+.right-side > div:nth-child(2) > form > div:last-child > button {
+    width: 200px;
+    height: 30px;
 }
