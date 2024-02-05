@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .body {
@@ -35,15 +36,39 @@
 /* right side style */
 
 .right-side {
-    border: var(--test-border);
-
     display: var(--display-flex);
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.right-side > div:nth-child(1) {
+    border: var(--test-border);
+    padding: 50px;
+    position: relative;
+    bottom: 100px;
+
+    font-weight: bold;
+}
+
+.right-side > div:nth-child(1) > div:nth-child(1) {
+    padding-bottom: 20px;
+} 
+
+.right-side > div:nth-child(1) > div > span {
+    font-style: italic;
+}
+
 
 .right-side:nth-child(2) {
     display: var(--display-flex);
     flex-direction: column;
+}
+
+.form {
+    display: var(--display-flex);
+    gap: 20px;
 }
 
 .form > form > div:nth-child(1) {
