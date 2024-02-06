@@ -101,43 +101,73 @@
 }
 
 .right-side > div:nth-child(2) > form > div:nth-child(1) {
+    box-shadow: 2px 2px 10px -5px black;
+
     background-color: var(--white-background);
-    border: var(--test-border);
     display: var(--display-flex);
     flex-wrap: wrap;
     gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .right-side > div:nth-child(2) > form > div:nth-child(1) > div:nth-child(1) {
-    border: var(--test-border);
+    font-weight: bold;
+    font-size: 1.5rem;
+
     width: 100%;
     padding-left: 50px;
 }
 
 
 .right-side > div:nth-child(2) > form > div:nth-child(1) > div {
+    font-size: 0.6rem;
+
     width: var(--div-size);
     display: var(--display-flex);
-    border: var(--test-border);
     flex-direction: column;
     padding-left: 50px;
+}
+
+.right-side > div:nth-child(2) > form > div:nth-child(1) > div > input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid grey;
+    width: 200px;
+    border-radius: 3px;
+    height: 20px;
+}
+
+.right-side > div:nth-child(2) > form > div:nth-child(1) > div > input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 10px -5px black;
 }
 
 /* Button */
 
 .right-side > div:nth-child(2) > form > div:last-child {
-    border: var(--test-border);
-
     position: relative;
     top: 20px;
     padding-left: 50px;
 
-    display: flex;
+    display: var(--display-flex);
     flex-direction: column;
     gap: 10px;
 }
 
 .right-side > div:nth-child(2) > form > div:last-child > button {
-    width: 200px;
-    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px -5px black;
+
+    color: white;
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.right-side > div:nth-child(2) > form > div:last-child > div > span {
+    color: green;
+    cursor: pointer;
 }
